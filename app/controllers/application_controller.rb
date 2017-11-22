@@ -11,6 +11,7 @@ class ApplicationController < Sinatra::Base
 
   class Dog
     attr :name, :type, :age
+    
     def initialize(name, type, age)
       @name = name
       @type = type
