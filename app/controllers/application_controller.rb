@@ -10,8 +10,8 @@ class ApplicationController < Sinatra::Base
   end
 
   class Dog
-    attr :name, :type, :age
-    
+    attr_accessor :name, :type, :age
+
     def initialize(name, type, age)
       @name = name
       @type = type
